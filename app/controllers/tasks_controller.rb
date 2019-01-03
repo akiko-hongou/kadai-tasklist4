@@ -7,7 +7,6 @@ class TasksController < ApplicationController
       @task = current_user.tasks.build  # form_for 用
       @tasks = current_user.tasks.order('created_at DESC')
     end
-    
   end
   
   def show
